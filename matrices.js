@@ -1,4 +1,6 @@
-let cantidad = prompt('Ingrese la cantidad de personas que desea registrar')
+const prompt = require('prompt-sync')()
+
+let cantidad = prompt('Ingrese la cantidad de personas que desea registrar: ')
 let personas = []
 for (let i = 0; i < cantidad; i++) {
   let nombre = prompt('Ingrese el nombre de la persona: ')
